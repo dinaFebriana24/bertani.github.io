@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dcf8da;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugas.TableProgressController">
+   <children>
+      <TableView fx:id="tv" layoutX="203.0" layoutY="65.0" prefHeight="252.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="tcTanggal" onEditCommit="#editTanggal" text="Tanggal" />
+            <TableColumn fx:id="tcProgress" onEditCommit="#editProgress" prefWidth="177.0" text="Progres" />
+            <TableColumn fx:id="tckemajuan" onEditCommit="#editRating" prefWidth="123.0" text="Kemajuan Lahan (%)" />
+        </columns>
+      </TableView>
+      <Button fx:id="btTambah" layoutX="113.0" layoutY="339.0" mnemonicParsing="false" onAction="#ntah" text="Tambah" />
+      <Button fx:id="btHapus" layoutX="275.0" layoutY="339.0" mnemonicParsing="false" onAction="#hapus" text="Hapus" textFill="#191e19" />
+      <Button fx:id="btLihatGrafik" layoutX="461.0" layoutY="339.0" mnemonicParsing="false" onAction="#lihatgrafik" text="Lihat Grafik" />
+      <Button fx:id="btBack" layoutX="16.0" layoutY="339.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="56.0" text="Back" />
+      <Label layoutX="16.0" layoutY="66.0" prefHeight="25.0" prefWidth="76.0" text="Tanggal" textFill="#0e250f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dptgl" layoutX="15.0" layoutY="89.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="tfprogress" layoutX="14.0" layoutY="143.0" prefHeight="111.0" prefWidth="159.0" />
+      <Label layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="103.0" text="Progress Lahan" textFill="#0e250f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="260.0" prefHeight="25.0" prefWidth="199.0" text="Tingkat Kemajuan Lahan (%)" textFill="#0e250f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfrating" layoutX="12.0" layoutY="284.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutY="-1.0" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #4a7c53;" text="Kebun Bawang" textFill="#f8f8f8">
+         <font>
+            <Font name="Bodoni Bd BT Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

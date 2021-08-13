@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugas.ScenemenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="24.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Gambar-Pemandangan-Sawah-yang-Indah-13.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="63.0" prefHeight="27.0" prefWidth="177.0" text="Selamat datang.......">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="bRencana" layoutX="32.0" layoutY="168.0" mnemonicParsing="false" onAction="#kescenerencana" prefHeight="29.0" prefWidth="82.0" style="-fx-background-color: #83f883;" text="Rencanaku" textFill="#030303">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bSaham" layoutX="146.0" layoutY="168.0" mnemonicParsing="false" onAction="#kescenesaham" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #83f883;" text="Sahamku">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bProgress" layoutX="262.0" layoutY="168.0" mnemonicParsing="false" onAction="#kesceneprogress" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #83f883;" text="Progress">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bToko" layoutX="488.0" layoutY="168.0" mnemonicParsing="false" onAction="#kescenetoko" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #83f883;" text="Toko">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bTransaksi" layoutX="373.0" layoutY="168.0" mnemonicParsing="false" onAction="#kescenetransaksi" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #83f883;" text="Transaksi">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonback" layoutX="14.0" layoutY="351.0" onAction="#kescene1" prefHeight="25.0" prefWidth="60.0" text="Back" />
+      <Label layoutY="-1.0" prefHeight="54.0" prefWidth="600" style="-fx-background-color: #1f8946;" text=" A-Grow" textFill="#ecf2ee">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

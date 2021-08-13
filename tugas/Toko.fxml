@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dcf8da;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugas.TokoController">
+   <children>
+      <Label prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #1f8946;" text="Toko" textFill="#dee4de">
+         <font>
+            <Font name="Bodoni MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="97.0" fitWidth="114.0" layoutX="24.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/3115330_fcb515f2-baca-4a27-aad6-10d6c2d804a9_816_816.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="97.0" fitWidth="116.0" layoutX="296.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/9627105_08c857a8-c683-4bd5-97b2-f41f37c6b93e_320_320.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btBack" layoutX="24.0" layoutY="337.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="60.0" text="Back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="137.0" layoutY="92.0" prefHeight="17.0" prefWidth="136.0" text="Nama : Bawang Merah">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="109.0" prefHeight="17.0" prefWidth="136.0" text="Lokasi : Semarang">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="128.0" prefHeight="17.0" prefWidth="136.0" text="Harga : Rp 5000/kg">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="92.0" prefHeight="17.0" prefWidth="136.0" text="Nama : Cabe Merah">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="109.0" prefHeight="17.0" prefWidth="136.0" text="Lokasi : Ponorogo">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="128.0" prefHeight="17.0" prefWidth="136.0" text="Harga : Rp 1000/kg">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="chatt31" layoutX="425.0" layoutY="153.0" mnemonicParsing="false" onAction="#chatt" prefHeight="30.0" prefWidth="97.0" text="Chatt Penjual">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="chatt32" layoutX="157.0" layoutY="153.0" mnemonicParsing="false" onAction="#chatt" prefHeight="19.0" prefWidth="97.0" text="Chatt Penjual">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="137.0" layoutY="76.0" prefHeight="17.0" prefWidth="136.0" text="Kode Barang : A">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="76.0" prefHeight="17.0" prefWidth="136.0" text="Kode Barang : B">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="291.0" prefHeight="29.0" prefWidth="319.0" text="Lakukan proses pembelian di forum transaksi">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane2" layoutY="50.0" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #b2eeb2;">
+         <children>
+            <TextField fx:id="tfpesan" layoutX="14.0" layoutY="274.0" prefHeight="30.0" prefWidth="477.0" promptText="Ketik Pesan" />
+            <Button fx:id="kirim" layoutX="507.0" layoutY="277.0" mnemonicParsing="false" onAction="#aksiKirim" prefHeight="25.0" prefWidth="60.0" text="Kirim" />
+            <Button fx:id="kirim1" layoutX="15.0" layoutY="311.0" mnemonicParsing="false" onAction="#closeChatt" prefHeight="25.0" prefWidth="60.0" text="Back" />
+            <Label layoutX="3.0" layoutY="3.0" prefHeight="29.0" prefWidth="350.0" text="Penjual : Pak Mermut" textFill="#1e1a1a">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
